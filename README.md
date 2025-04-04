@@ -10,7 +10,7 @@ Você deve realizar os 5 commits descritos abaixo e submeter os 5 links dos comm
 
 Primeiramente, explore o código do sistema em [model.py](https://github.com/andrehora/library/blob/main/model.py).
 Note que temos três classes: `Book` (livros que podem ser alugados), `Rental` (dados de um aluguel) e `Client` (clientes da biblioteca).
-A classe `Client` possui um método `statement`, responsável por gerar o recibo do aluguel para o cliente:
+A classe `Client` possui um método `statement`, responsável por gerar o reciibo do aluguel para o cliente:
 
 ```python
     def statement(self) -> str:
