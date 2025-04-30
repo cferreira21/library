@@ -15,13 +15,13 @@ class Book:
         if self.price_code == Book.REGULAR:
             amount += 2
             if days_rented > 2:
-                amount += (self.days_rented - 2) * 1.5
+                amount += (days_rented - 2) * 1.5
         elif self.price_code == Book.NEW_RELEASE:
-            amount += Rental.days_rented * 3
+            amount += days_rented * 3
         elif self.price_code == Book.CHILDREN:
             amount += 1.5
-            if Rental.days_rented > 3:
-                amount += (Rental.days_rented - 3) * 1.5
+            if days_rented > 3:
+                amount += (days_rented - 3) * 1.5
 
         return amount
 
